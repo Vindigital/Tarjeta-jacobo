@@ -13,6 +13,7 @@
       --dorado: #c9a063;
       --marino: #1b2530;
       --texto-claro: #ffffff;
+      font-size: min(3.07vw, 16px);
     }
 
     * {
@@ -28,18 +29,17 @@
       justify-content: center;
       /*align-items: center;*/
       min-height: 10vh;
-      padding: 100px;
+      padding: min(4vw, 100px);
     }
 
     /* Contenedor principal estilo tarjeta vertical */
     .card {
       position: relative;
-      width: 200%;
-      max-width: 480px;
-      height: 572px;
+      width: 30rem;
+      height: 41.75rem;
       background-color: #ffffff;
-      border-radius: 15px;
-      border: 1px solid var(--dorado);
+      border-radius: .9375rem;
+      border: .0625rem solid var(--dorado);
       overflow: hidden;
       box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
     }
@@ -58,7 +58,7 @@
     /* Marca: logo, nombre y frase sobre el área blanca */
     .brand {
       position: absolute;
-      top: 26px;
+      top: 1.625rem;
       left: 0;
       width: 50%;
       height: 100%;
@@ -66,15 +66,15 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 64px 8px 30px 17px;
+      padding: 4rem .5rem 1.875rem 1.0625rem;
       color: var(--marino);
       z-index: 2;
     }
 
     .brand img {
-      width: 70px;
+      width: 4.375rem;
       height: auto;
-      margin-bottom: 10px;
+      margin-bottom: .625rem;
       display: block;
       /*filter: brightness(0);*/
       opacity: .82;
@@ -92,7 +92,7 @@
     }
 
     .brand h4 {
-      margin: 6px 0 0;
+      margin: .375rem 0 0;
       color: #c1c3c5;
       font-size: 1.0rem;
       /*letter-spacing: .14em;*/
@@ -101,7 +101,7 @@
     }
 
     .brand .frase {
-      margin: 120px 0 0;
+      margin: 7.5rem 0 0;
       font-family: 'EB Garamond', Georgia, serif;
       font-style: italic;
       font-size: 1.3rem;
@@ -120,7 +120,7 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      padding: 40px 8px 12px 55px;
+      padding: 2.5rem .5rem .75rem 3.4375rem;
       color: var(--texto-claro);
       z-index: 2;
       text-align: center;
@@ -130,24 +130,24 @@
     .contact-list {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 1.125rem;
       width: 100%;
-      margin-top: 60px;
+      margin-top: 3.75rem;
       text-align: left;
     }
 
     .contact-item {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
+      gap: .625rem;
       text-decoration: none;
       color: inherit;
       min-width: 0;
     }
 
     .icon-circle {
-      width: 27px;
-      height: 27px;
+      width: 1.6875rem;
+      height: 1.6875rem;
       background-color: var(--dorado);
       border-radius: 50%;
       display: flex;
@@ -165,7 +165,7 @@
       overflow-wrap: break-word;
       word-break: break-word;
       min-width: 0;
-      padding-top: 4px;
+      padding-top: .25rem;
     }
 
     /* Bloque inferior: redes + valores + diente + frase, todo centrado */
@@ -181,20 +181,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
     }
 
     .social-icons {
       display: flex;
-      gap: 16px;
-      margin-bottom: 10px;
+      gap: 1rem;
+      margin-bottom: .625rem;
     }
 
     .social-box {
-      width: 34px;
-      height: 34px;
-      border: 1.5px solid var(--dorado);
-      border-radius: 10px;
+      width: 2.125rem;
+      height: 2.125rem;
+      border: .09375rem solid var(--dorado);
+      border-radius: .625rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -222,10 +222,10 @@
     /* Línea divisoria dorada */
     .line-full {
       width: 100%;
-      height: 1px;
+      height: .0625rem;
       background-color: var(--dorado);
       opacity: .8;
-      margin-bottom: 12px;
+      margin-bottom: .75rem;
     }
 
     /* Valores */
@@ -235,7 +235,7 @@
       letter-spacing: .16em;
       font-weight: 700;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: .625rem;
     }
 
     /* Separador con icono de diente */
@@ -244,13 +244,13 @@
       align-items: center;
       width: 85%;
       justify-content: center;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: .625rem;
+      margin-bottom: .625rem;
     }
 
     .line-small {
       flex: 1;
-      height: 1px;
+      height: .0625rem;
       background-color: var(--dorado);
       opacity: .7;
     }
