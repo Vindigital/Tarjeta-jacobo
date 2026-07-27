@@ -147,7 +147,6 @@
     .icon-circle {
       width: 1.6875rem;
       height: 1.6875rem;
-      background-color: var(--dorado);
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -155,6 +154,12 @@
       color: #ffffff;
       font-size: .72rem;
       flex-shrink: 0;
+    }
+
+    .icon-circle svg {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
     .contact-text {
@@ -312,21 +317,30 @@
       <div class="contact-list">
         <a class="contact-item" href="tel:+573145848551">
           <div class="icon-circle">
-            <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="12" fill="#000" />
+              <path fill="#fff" d="M8.5 5.5c.5-.5 1.2-.5 1.6.1l1.3 1.9c.3.5.3 1.1-.1 1.5l-.9.9c.5 1.3 1.5 2.3 2.8 2.8l.9-.9c.4-.4 1-.4 1.5-.1l1.9 1.3c.6.4.6 1.1.1 1.6l-1 1c-.6.6-1.5.8-2.3.6-2.7-.7-5.4-3.4-6.1-6.1-.2-.8 0-1.7.6-2.3z" />
+            </svg>
           </div>
           <div class="contact-text">+57 314 584 8551<br />+57 310 620 7208</div>
         </a>
 
         <a class="contact-item" href="mailto:Jacobogutierrez176@hotmail.com">
           <div class="icon-circle">
-            <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <rect x="1" y="4" width="22" height="16" rx="2.5" fill="#f1f3f4" />
+              <path fill="#EA4335" d="M1 6.2C1 5 2 4 3.2 4h.5L12 10.5 19.3 4h.5C21 4 22 5 22 6.2v.4l-10 7.7-10-7.7v-.4z" />
+            </svg>
           </div>
           <div class="contact-text">Jacobogutierrez176@hotmail.com</div>
         </a>
 
         <a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=Cl.+32+%238a-33%2C+Comercios+La+Matuna%2C+Cartagena" target="_blank" rel="noopener noreferrer">
           <div class="icon-circle">
-            <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path fill="#EA4335" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+              <circle cx="12" cy="9" r="2.6" fill="#fff" />
+            </svg>
           </div>
           <div class="contact-text">Centro. Cl.32 # 8a-33, Comercios La Matuna, 3er piso consultorio 301.</div>
         </a>
