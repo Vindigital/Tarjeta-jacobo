@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=EB+Garamond:ital@1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <style>
     :root {
       --dorado: #c9a063;
@@ -72,7 +71,7 @@
     }
 
     .brand img {
-      width: 4.375rem;
+      width: 7.375rem;
       height: auto;
       margin-bottom: .625rem;
       display: block;
@@ -101,10 +100,10 @@
     }
 
     .brand .frase {
-      margin: 10.5rem 0 0;
+      margin: 7.5rem 0 0;
       font-family: 'EB Garamond', Georgia, serif;
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: #5f6b7a;
       line-height: 1.5;
     }
@@ -204,9 +203,13 @@
       transition: background-color .2s, color .2s, transform .2s;
     }
 
+    .social-box svg {
+      width: 1.3rem;
+      height: 1.3rem;
+      border-radius: .3rem;
+    }
+
     .social-box:hover {
-      background-color: var(--dorado);
-      color: #ffffff;
       transform: translateY(-2px);
     }
 
@@ -256,8 +259,9 @@
     }
 
     .tooth-icon {
-      color: var(--dorado);
-      font-size: .95rem;
+      width: .95rem;
+      height: .95rem;
+      fill: var(--dorado);
     }
 
     .quote {
@@ -298,8 +302,8 @@
       <h4>Odontología Estética</h4>
 
       <p class="frase">
-        Sonrisas innovadoras,<br />
-        vidas inspiradoras
+        Creamos confianza. <br />
+        Generamos fidelidad <br /> con tu mejor sonrisa.
       </p>
     </div>
 
@@ -307,17 +311,23 @@
 
       <div class="contact-list">
         <a class="contact-item" href="tel:+573145848551">
-          <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
           <div class="contact-text">+57 314 584 8551<br />+57 310 620 7208</div>
         </a>
 
         <a class="contact-item" href="mailto:Jacobogutierrez176@hotmail.com">
-          <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
           <div class="contact-text">Jacobogutierrez176@hotmail.com</div>
         </a>
 
         <a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=Cl.+32+%238a-33%2C+Comercios+La+Matuna%2C+Cartagena" target="_blank" rel="noopener noreferrer">
-          <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
           <div class="contact-text">Centro. Cl.32 # 8a-33, Comercios La Matuna, 3er piso consultorio 301.</div>
         </a>
       </div>
@@ -327,10 +337,26 @@
         <div class="social-section">
           <div class="social-icons">
             <a href="https://www.instagram.com/odontoesteticartagena?igsh=MTQ2YWY2ejJ6dDVmOA==" class="social-box" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
+              <svg viewBox="0 0 24 24">
+                <defs>
+                  <linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#FEDA75" />
+                    <stop offset="25%" stop-color="#FA7E1E" />
+                    <stop offset="50%" stop-color="#D62976" />
+                    <stop offset="75%" stop-color="#962FBF" />
+                    <stop offset="100%" stop-color="#4F5BD5" />
+                  </linearGradient>
+                </defs>
+                <rect width="24" height="24" rx="6" fill="url(#igGrad)" />
+                <path fill="#fff" d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2A3.2 3.2 0 1112 8.6a3.2 3.2 0 010 6.6zM17.4 6.6a1.2 1.2 0 11-1.2-1.2 1.2 1.2 0 011.2 1.2z" />
+              </svg>
             </a>
             <a href="https://wa.me/573145848551?text=Hola%20me%20interesa%20contactar" class="social-box" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-              <i class="fa-brands fa-whatsapp"></i>
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="12" fill="#25D366" />
+                <path fill="#fff" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z" />
+                <path fill="#fff" d="M12.05 2.16A9.83 9.83 0 002.2 12a9.72 9.72 0 001.3 4.9L2.5 20.9l4.1-1.07a9.85 9.85 0 005.44 1.6h.01c5.42 0 9.83-4.41 9.83-9.86 0-2.63-1.03-5.1-2.89-6.96a9.78 9.78 0 00-6.94-2.45zm0 18.06h-.01a8.2 8.2 0 01-4.18-1.14l-.3-.18-3.11.81.83-3.03-.2-.31a8.14 8.14 0 01-1.26-4.35c0-4.5 3.67-8.16 8.18-8.16 4.5 0 8.16 3.67 8.16 8.17 0 4.5-3.67 8.19-8.11 8.19z" />
+              </svg>
             </a>
           </div>
           <div class="follow">Síguenos y conoce<br />nuestro trabajo</div>
@@ -342,7 +368,7 @@
 
         <div class="tooth-divider">
           <div class="line-small"></div>
-          <i class="fa-solid fa-tooth tooth-icon"></i>
+          <svg class="tooth-icon" viewBox="0 0 24 24"><path d="M12 2C9 2 6.5 3.8 6.5 6.8c0 1.3.3 2.6.6 4.1.4 1.9.6 3.8.7 6.9.1 2.4.9 4.2 1.7 4.2.9 0 1.2-1.8 1.4-3.9.1-1.1.3-2.3 1.1-2.3s1 1.2 1.1 2.3c.2 2.1.5 3.9 1.4 3.9.8 0 1.6-1.8 1.7-4.2.1-3.1.3-5 .7-6.9.3-1.5.6-2.8.6-4.1C17.5 3.8 15 2 12 2z" /></svg>
           <div class="line-small"></div>
         </div>
 
